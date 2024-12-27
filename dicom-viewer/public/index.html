@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Define el idioma del contenido como español -->
+  <head>
+    <!-- Inicio de la sección de cabecera donde se definen los metadatos y configuraciones de la página -->
+    
+    <meta charset="utf-8" />
+    <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales -->
+    
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- Establece el icono de la página (favicon) que se muestra en la pestaña del navegador -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Configura la escala y el ancho de la página para dispositivos móviles y desactiva el zoom del usuario -->
+
+    <meta name="theme-color" content="#000000" />
+    <!-- Define el color del tema para el navegador en dispositivos móviles, aquí es negro (#000000) -->
+    
+    <meta name="description" content="Visor de imágenes DICOM" />
+    <!-- Proporciona una descripción breve del contenido de la página, en este caso es un visor de imágenes DICOM -->
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- Define el ícono que se muestra en la pantalla de inicio de dispositivos Apple cuando se guarda la página -->
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Enlaza al archivo de manifiesto para aplicaciones web, que contiene configuraciones para el comportamiento y apariencia de la aplicación cuando se instala en un dispositivo -->
+
+    <title>Visor DICOM</title>
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+
+    <!-- Sección de estilos en línea para prevenir el zoom en dispositivos móviles -->
+    <style>
+      html {
+        touch-action: none;
+        -ms-touch-action: none;
+        /* Evita el zoom y otras acciones táctiles para mejorar la experiencia en dispositivos móviles */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Inicio de la sección de cuerpo del documento -->
+    
+    <noscript>Necesitas habilitar JavaScript para ejecutar esta aplicación.</noscript>
+    <!-- Mensaje que se muestra si el usuario tiene JavaScript deshabilitado, informándole de la necesidad de activarlo para usar la aplicación -->
+    
+    <div id="root"></div>
+    <!-- Contenedor principal de la aplicación donde se montará el contenido generado dinámicamente, común en aplicaciones React -->
+  </body>
+</html>
